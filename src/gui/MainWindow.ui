@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>620</height>
+   </rect>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1,0">
+    <item>
+     <layout class="QHBoxLayout" name="topControls">
+      <item>
+       <widget class="QPushButton" name="scanButton">
+        <property name="text"><string>Сканировать</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="realtimeToggle">
+        <property name="checkable"><bool>true</bool></property>
+        <property name="text"><string>Защита: ВЫКЛ</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="captureToggle">
+        <property name="checkable"><bool>true</bool></property>
+        <property name="text"><string>Захват: ВЫКЛ</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="addAutostartButton">
+        <property name="text"><string>В автозапуск</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="removeAutostartButton">
+        <property name="text"><string>Убрать автозапуск</string></property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation"><enum>Qt::Horizontal</enum></property>
+        <property name="sizeHint" stdset="0">
+         <size><width>40</width><height>20</height></size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="authorLabel">
+        <property name="text"><string>от @BengaminButton</string></property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="logView">
+      <property name="readOnly"><bool>true</bool></property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="bottomBar">
+      <item>
+       <widget class="QLabel" name="statusHint">
+        <property name="text"><string>Нажмите «Захват», затем печатайте — всё отобразится ниже</string></property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
